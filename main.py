@@ -42,7 +42,7 @@ def main():
 
             for shot in group_shots:
                 if asteroid.collides_with(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
 
         screen.fill("black")
